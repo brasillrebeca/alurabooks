@@ -1,0 +1,28 @@
+/* configurando o span */
+/* criamos uma pasta de estilização separada para:
+    1) diminui ra quantidade de links no header do html
+    2) otimizar o carregamento da página */
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-color: url("../img/Menu.svg"); /* os .. indicam que o caminho para essa imagem está fora da pasta onde estamos trabalhando */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}

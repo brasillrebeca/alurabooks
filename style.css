@@ -1,0 +1,10 @@
+@import url("styles/header.css"); /* importando a página de estilização do header */
+
+:root {
+    --cor-de-fundo: #235aca;
+    --branco: #FFFFFF;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
