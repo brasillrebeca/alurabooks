@@ -5,7 +5,7 @@
 .cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-color: url("../img/Menu.svg"); /* os .. indicam que o caminho para essa imagem está fora da pasta onde estamos trabalhando */
+    background-image: url("../img/Menu.svg"); /* os .. indicam que o caminho para essa imagem está fora da pasta onde estamos trabalhando */
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
