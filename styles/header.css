@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* abre opção para configurar a direção do posicionamento */
 }
 
 .container {
@@ -25,4 +26,35 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+/* lista só aparece SE o usuário clicar */
+.lista-menu {
+    display: none; /* faz a lista desaparecer da interface */
+    position: absolute; /* faz o elemento filho se posicionar de acordo com o elemento pai */
+    top: 100%;
+    width: 60vw;
+}
+
+/* checked: pseudo classe que detecta preenchimento do checkbox / ~ é uma condicional */
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+}
+
+.lista-menu__link {
+    background-color: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
