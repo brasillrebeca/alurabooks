@@ -1,6 +1,7 @@
 @import url("styles/header.css"); /* importando a página de estilização do header */
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
+@import url("styles/secao.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
