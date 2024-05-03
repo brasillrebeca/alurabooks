@@ -60,16 +60,23 @@
     text-transform: uppercase;
 }
 
+/*
 .container__botao {
     display: none;
 }
-
-/*desaparecer o nome AluraBooks - só aparece acima de 1024px, por conta do media query*/
 .container__titulo {
     display: none;
 }
-
 .opcoes {
+    display: none;
+}
+.container__texto {
+    display: none;
+}
+*/
+
+/*elementos que só aparecem em tamanho maiores de dispositivo, por conta do media query*/
+.container__botao, .container__titulo, .opcoes, .container__texto {
     display: none;
 }
 
@@ -119,5 +126,26 @@
 
     .opcoes__botao {
         display: none;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
     }
 }
